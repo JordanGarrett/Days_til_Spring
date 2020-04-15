@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Days Till Spring</title>
+
+    <style>
+        #days {
+            position: relative;
+            top: 70px;
+            left: 70px;
+            font-size: 1.8em;
+        }
+
+        #spring {
+            position: relative;
+            top: 200px;
+            left: 0px;
+            font-size: 1.8em;
+        }
+
+        body {
+            background-image: url("../Days_til_spring/img/flower.png");
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id='days'>
+        <script type="text/javascript">
+            //Javascript program to provide
+            //calculation of no. of days between two dates
+
+            //To set two dates for two variables
+            var date1 = new Date();
+            var date2 = new Date("03/19/2020");
+
+            //To calculate time difference between two dates
+            var Difference_In_Time = date2.getTime() - date1.getTime();
+            //To calculate the number of days between two dates and then rounds it
+            var Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24));
+            //To display final number of days (result)
+            document.write("<span id=\"day\">" + Difference_In_Days + "</span>");
+
+        </script>
+    </div>
+    <p id='spring'> Days Until Spring 2020</p>
+</body>
+
+</html>
